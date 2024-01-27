@@ -1,0 +1,75 @@
+/* CSS color variant */
+*,
+::before,
+::after {
+    --color1- :#F5EEDC;
+    --color2- : #C0D8C0;
+    --color3- : #ECB390;
+    --color4- : #DD4A48;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 24px;
+    gap: 24px;
+    align-items: center;
+    background-image: linear-gradient(135deg, var(--color1-) 0%, var(--color2-) 50%, var(--color1-) 100%);
+}
+
+img {
+    height: auto;
+    max-width: 50%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    margin-left: 16px;
+}
+
+
+
+/* Collumns page tweaking */
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-right: 2px solid black;
+    padding: 16px;
+}
+
+.col1 h1, .col1 img, .col1 h2 {
+    text-align: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 33%;
+}
+
+.col2 ul li, .col2 ol li {
+    padding: 4px;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 33%;
+    border-left: 2px solid black;
+    padding-left: 16px;
+}
+
+.col3 ol li {
+    padding: 4px;
+}
